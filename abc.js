@@ -1,14 +1,15 @@
-console.log("working");
-let colors=['blue','pink','red'];
-colors[3]= 'green';
-console.log(colors);
 
-console.log(colors.length);  
+function greet(name,last_name){
 
-// new array
-let pc_specs=['i5 6400', 'asus b250', 'hyper X 16gigs', 'RX 5500XT','BUNCH OF RGBS'];
-console.log(pc_specs);
-let peripherals =['Logitech G502', 'BLUE SWITCHES', 'HYPER X CLOUD II'];
-console.log(peripherals);
-console.log("type of array is "+ typeof(peripherals));
-console.log("total periphirals are "+ peripherals.length);
+    console.log("hello,"+ name +" hope u r doing fine.. " + last_name);
+}
+greet();
+greet("travis ","scott");
+
+function square(num){
+
+    return console.log("the square of "+ num+ " is '"+ (num * num)+"'") ;
+}
+square(2);
+square(3);
+square(4);
