@@ -1,15 +1,30 @@
+let arr=[21,44,33,223,65,43,65,132,76,3,654];
 
-function greet(name,last_name){
 
-    console.log("hello,"+ name +" hope u r doing fine.. " + last_name);
+let [,,a,b,c,...rest]=arr;
+//console.log(a, b,c,rest);
+let obj = {...arr};
+//console.log(obj);
+
+//spread operator
+
+let arr1=[5,6,7];
+let obj1={...arr1};
+
+console.log(obj1);
+function mul(v1,v2,v3){
+
+    return v1*v2*v3;
 }
-greet();
-greet("travis ","scott");
+console.log("multiple is " + mul(...arr1));
 
-function square(num){
 
-    return console.log("the square of "+ num+ " is '"+ (num * num)+"'") ;
-}
-square(2);
-square(3);
-square(4);
+let obj2={
+    name: "gulfam",
+    age: 21,
+    cms: 113
+};
+console.log({...obj2, age:25})
+console.log({...obj2, name:"Gulfam Channa"})
+console.log(obj2);
+console.log(obj2);
